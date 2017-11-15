@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import ToolBar from './components/toolbar/toolbar';
+import ToolBar from './components/toolbar/toolbar';
+import List from './components/list/list';
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <ToolBar />,
   document.getElementById('app')
+);
+
+ReactDOM.render(
+  <List />,
+  document.getElementById('app-content')
 );

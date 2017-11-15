@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 class ToolBar extends Component {
   render() {
@@ -7,3 +7,5 @@ class ToolBar extends Component {
     );
   }
 }
+
+export default ToolBar;
