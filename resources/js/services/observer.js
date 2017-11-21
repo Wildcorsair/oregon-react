@@ -1,14 +1,12 @@
-/**
- * Class implements Publisher Subscriber pattern.
- */
 class Observer {
 
-  constructor() {
-
+  update() {
+    console.log('Observer update!');
+    this.changeState();
   }
 
-  publish(message, data) {
-    // console.log(message, data);
+  changeState() {
+    console.log('Observer chnaged state!');
   }
 
 }

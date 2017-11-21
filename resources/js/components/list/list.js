@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Observer from './../../services/observer';
 
 class List extends Component {
 
@@ -7,17 +6,8 @@ class List extends Component {
     super(props);
   }
 
-  componentDidMount() {
-    this.token = Observer.subscribe('MY TOPIC', this.subscriber)
-  }
-
-  componentWillUnmount() {
-    Observer.unsubscribe(this.token)
-  }
-
-  subscriber(msg, data) {
-    console.log(msg, data)
-    // set state etc...
+  update() {
+    console.log('List updated!');
   }
 
   render() {

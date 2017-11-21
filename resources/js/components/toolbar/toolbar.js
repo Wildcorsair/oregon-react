@@ -6,9 +6,16 @@ class ToolBar extends Component {
     super(props);
   }
 
+  clickAddItem() {
+    console.log('Click');
+  }
+
   render() {
     return(
-      <h2>Text from component</h2>
+      <div>
+        <h2>Text from component</h2>
+        <div><button onClick={this.clickAddItem}>Add Item</button></div>
+      </div>
     );
   }
 
